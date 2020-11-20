@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         if (v.getId() == R.id.iv_cart) { // 点击了购物车图标
             // 跳转到购物车页面
-            Intent intent = new Intent(this, ShoppingCartActivity.class);
+            Intent intent = new Intent(this, ShoppingCartProActivity.class);
             startActivity(intent);
         }
     }

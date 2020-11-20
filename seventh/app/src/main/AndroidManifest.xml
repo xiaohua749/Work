@@ -15,8 +15,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ShoppingChannelActivity"></activity>
-        <activity android:name=".ShoppingCartProActivity" />
+        <activity
+            android:name=".LaunchSimpleActivity"
+            android:exported="true" />
+        <activity android:name=".ViewPagerActivity"  android:exported="true"/>
+        <activity android:name=".FragmentStaticActivity"  android:exported="true"/>
+        <activity
+            android:name=".ShoppingChannelActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ShoppingCartProActivity"
+            android:exported="true" />
         <activity
             android:name=".ShoppingDetailActivity"
             android:exported="true" />
