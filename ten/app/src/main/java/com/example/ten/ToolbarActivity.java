@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.graphics.Color;
 import android.view.View;
 import android.view.View.OnClickListener;
-
 public class ToolbarActivity extends AppCompatActivity {
     private final static String TAG = "ToolbarActivity";
 

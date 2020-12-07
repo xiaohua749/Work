@@ -39,7 +39,8 @@ public class TabLayoutActivity extends AppCompatActivity implements OnTabSelecte
         setSupportActionBar(tl_head);
         mTitleArray.add("商品");
         mTitleArray.add("详情");
-        //mTitleArray.add("评价");
+        mTitleArray.add("评价");
+        mTitleArray.add("推荐");
         initTabLayout(); // 初始化标签布局
         initTabViewPager(); // 初始化标签翻页
     }
@@ -60,10 +61,14 @@ public class TabLayoutActivity extends AppCompatActivity implements OnTabSelecte
         tab_title.addTab(tab_title.newTab().setCustomView(R.layout.item_toolbar2));
         TextView tv_toolbar2 = findViewById(R.id.tv_toolbar2);
         tv_toolbar2.setText(mTitleArray.get(1));
-        // 给tab_title添加一个指定布局的标签
-        //tab_title.addTab(tab_title.newTab().setCustomView(R.layout.item_toolbar2));
-        //TextView tv_toolbar3 = findViewById(R.id.tv_toolbar3);
-        //tv_toolbar3.setText(mTitleArray.get(2));
+         //给tab_title添加一个指定布局的标签
+        tab_title.addTab(tab_title.newTab().setCustomView(R.layout.item_toolbar3));
+        TextView tv_toolbar3 = findViewById(R.id.tv_toolbar3);
+        tv_toolbar3.setText(mTitleArray.get(2));
+        //给tab_title添加一个指定布局的标签
+        tab_title.addTab(tab_title.newTab().setCustomView(R.layout.item_toolbar4));
+        TextView tv_toolbar4 = findViewById(R.id.tv_toolbar4);
+        tv_toolbar4.setText(mTitleArray.get(3));
         // 给tab_title添加标签选中监听器
         tab_title.addOnTabSelectedListener(this);
     }
